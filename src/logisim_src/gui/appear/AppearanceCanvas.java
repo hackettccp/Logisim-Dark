@@ -3,10 +3,7 @@
 
 package logisim_src.gui.appear;
 
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -79,6 +76,7 @@ public class AppearanceCanvas extends Canvas
 		CanvasModel model = super.getModel();
 		if (model != null) model.addCanvasModelListener(listener);
 		grid.addPropertyChangeListener(GridPainter.ZOOM_PROPERTY, listener);
+
 	}
 	
 	@Override
@@ -213,6 +211,7 @@ public class AppearanceCanvas extends Canvas
 	
 	@Override
 	protected void paintBackground(Graphics g) {
+		g.setColor(Color.BLACK);
 		super.paintBackground(g);
 		grid.paintGrid(g);
 	}

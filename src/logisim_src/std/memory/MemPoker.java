@@ -77,7 +77,7 @@ public class MemPoker extends InstancePoker {
 			Graphics g = painter.getGraphics();
 			g.setColor(Color.RED);
 			g.drawRect(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight());
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 		}
 	
 		@Override
@@ -127,7 +127,7 @@ public class MemPoker extends InstancePoker {
 			Graphics g = painter.getGraphics();
 			g.setColor(Color.RED);
 			g.drawRect(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight());
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 		}
 	
 		@Override

@@ -402,7 +402,7 @@ class CircuitWires {
 		boolean showState = context.getShowState();
 		CircuitState state = context.getCircuitState();
 		Graphics g = context.getGraphics();
-		g.setColor(Color.white);
+		g.setColor(Color.black);
 		GraphicsUtil.switchToWidth(g, Wire.WIDTH);
 		WireSet highlighted = context.getHighlightedWires();
 
@@ -419,7 +419,7 @@ class CircuitWires {
 					if (!isValid) g.setColor(Value.NIL_COLOR);
 					else         g.setColor(state.getValue(s).getColor());
 				} else {
-					g.setColor(Color.white);
+					g.setColor(Color.black);
 				}
 				if (highlighted.containsWire(w)) {
 					GraphicsUtil.switchToWidth(g, Wire.WIDTH + 2);
@@ -440,7 +440,7 @@ class CircuitWires {
 							if (!isValid) g.setColor(Value.NIL_COLOR);
 							else         g.setColor(state.getValue(loc).getColor());
 						} else {
-							g.setColor(Color.white);
+							g.setColor(Color.black);
 						}
 						if (highlighted.containsLocation(loc)) {
 							g.fillOval(loc.getX() - 5, loc.getY() - 5, 10, 10);
@@ -462,7 +462,7 @@ class CircuitWires {
 						if (!isValid) g.setColor(Value.NIL_COLOR);
 						else         g.setColor(state.getValue(s).getColor());
 					} else {
-						g.setColor(Color.white);
+						g.setColor(Color.black);
 					}
 					if (highlighted.containsWire(w)) {
 						GraphicsUtil.switchToWidth(g, Wire.WIDTH + 2);
@@ -492,7 +492,7 @@ class CircuitWires {
 								if (!isValid) g.setColor(Value.NIL_COLOR);
 								else         g.setColor(state.getValue(loc).getColor());
 							} else {
-								g.setColor(Color.white);
+								g.setColor(Color.black);
 							}
 							if (highlighted.containsLocation(loc)) {
 								g.fillOval(loc.getX() - 5, loc.getY() - 5, 10, 10);

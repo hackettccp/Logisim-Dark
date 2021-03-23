@@ -190,7 +190,7 @@ public class ComponentDrawContext {
 			CircuitState state = getCircuitState();
 			g.setColor(state.getValue(pt).getColor());
 		} else {
-			g.setColor(Color.BLACK);
+			g.setColor(Color.DARK_GRAY);
 		}
 		g.fillOval(x - PIN_OFFS, y - PIN_OFFS, PIN_RAD, PIN_RAD);
 		g.setColor(curColor);
@@ -217,7 +217,7 @@ public class ComponentDrawContext {
 			CircuitState state = getCircuitState();
 			g.setColor(state.getValue(pt).getColor());
 		} else {
-			g.setColor(Color.BLACK);
+			g.setColor(Color.DARK_GRAY);
 		}
 		g.fillOval(pt.getX() - PIN_OFFS, pt.getY() - PIN_OFFS, PIN_RAD, PIN_RAD);
 		g.setColor(curColor);
@@ -231,7 +231,7 @@ public class ComponentDrawContext {
 				CircuitState state = getCircuitState();
 				g.setColor(state.getValue(pt).getColor());
 			} else {
-				g.setColor(Color.BLACK);
+				g.setColor(Color.DARK_GRAY);
 			}
 			g.fillOval(pt.getX() - PIN_OFFS, pt.getY() - PIN_OFFS, PIN_RAD, PIN_RAD);
 		}
@@ -241,7 +241,7 @@ public class ComponentDrawContext {
 	public void drawClock(Component comp, int i,
 			Direction dir) {
 		Color curColor = g.getColor();
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		GraphicsUtil.switchToWidth(g, 2);
 
 		EndData e = comp.getEnd(i);

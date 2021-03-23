@@ -180,7 +180,7 @@ public class Frame extends LFrame implements LocaleListener {
 	public Frame(Project proj) {
 		this.proj = proj;
 
-		//setBackground(Color.white);
+		setBackground(Color.black);
 		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		addWindowListener(new MyWindowListener());
 

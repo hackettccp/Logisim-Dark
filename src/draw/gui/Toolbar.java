@@ -128,7 +128,7 @@ class Toolbar extends JComponent {
 			for(int j = 0; j < column.length; j++) {
 				AbstractTool tool = column[j];
 				if (tool == listener.toolPressed && listener.inTool) {
-					g.setColor(Color.darkGray);
+					g.setColor(Color.lightGray);
 					g.fillRect(x, y, ICON_WIDTH, ICON_HEIGHT);
 				}
 				Icon icon = tool.getIcon();

@@ -532,7 +532,7 @@ public class Canvas extends JPanel
 		this.canvasPane = null;
 		this.tickCounter = new TickCounter();
 
-		setBackground(Color.white);
+		setBackground(Color.black);
 		addMouseListener(myListener);
 		addMouseMotionListener(myListener);
 		addKeyListener(myListener);

@@ -92,7 +92,7 @@ public class Probe extends InstanceFactory {
 		Bounds bds = painter.getBounds(); // intentionally with no graphics object - we don't want label included
 		int x = bds.getX();
 		int y = bds.getY();
-		g.setColor(Color.WHITE);
+		g.setColor(Color.BLACK);
 		g.fillRect(x + 5, y + 5, bds.getWidth() - 10, bds.getHeight() - 10);
 		g.setColor(Color.GRAY);
 		if (value.getWidth() <= 1) {
@@ -103,7 +103,7 @@ public class Probe extends InstanceFactory {
 				bds.getWidth() - 2, bds.getHeight() - 2, 6, 6);
 		}
 
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		painter.drawLabel();
 
 		if (!painter.getShowState()) {

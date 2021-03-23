@@ -108,7 +108,7 @@ public class Canvas extends JComponent {
 	}
 	
 	protected void paintBackground(Graphics g) {
-		g.clearRect(0, 0, getWidth(), getHeight());
+		g.fillRect(0, 0, getWidth(), getHeight());
 	}
 
 	protected void paintForeground(Graphics g) {

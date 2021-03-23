@@ -279,7 +279,7 @@ public class Demultiplexer extends InstanceFactory {
 				halign, GraphicsUtil.V_BASELINE);
 
 		// draw trapezoid, "DMX" label, and ports
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		Plexers.drawTrapezoid(g, bds, facing.reverse(), select.getWidth() == 1 ? 10 : 20);
 		GraphicsUtil.drawCenteredText(g, "DMX",
 				bds.getX() + bds.getWidth() / 2,

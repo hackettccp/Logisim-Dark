@@ -145,7 +145,7 @@ public class BitSelector extends InstanceFactory {
 
 		Plexers.drawTrapezoid(g, painter.getBounds(), facing, 9);
 		Bounds bds = painter.getBounds();
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		GraphicsUtil.drawCenteredText(g, "Sel",
 				bds.getX() + bds.getWidth() / 2,
 				bds.getY() + bds.getHeight() / 2);

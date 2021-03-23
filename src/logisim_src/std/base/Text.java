@@ -144,7 +144,7 @@ public class Text extends InstanceFactory {
 		int y = loc.getY();
 		Graphics g = painter.getGraphics();
 		g.translate(x, y);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		paintGhost(painter);
 		g.translate(-x, -y);
 	}

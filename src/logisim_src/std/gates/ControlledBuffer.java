@@ -102,7 +102,7 @@ class ControlledBuffer extends InstanceFactory {
 			icon.paintIcon(painter.getDestination(), g, 2, 2);
 		} else {
 			int x = isInverter ? 0 : 2;
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			int[] xp = new int[] { x + 15, x + 1, x + 1, x + 15 };
 			int[] yp = new int[] { 10,     3,     17,    10 };
 			g.drawPolyline(xp, yp, 4);
@@ -133,7 +133,7 @@ class ControlledBuffer extends InstanceFactory {
 		g.drawLine(pt0.getX(), pt0.getY(), pt1.getX(), pt1.getY());
 
 		// draw triangle
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		paintShape(painter);
 
 		// draw input and output pins

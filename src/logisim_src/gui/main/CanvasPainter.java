@@ -109,7 +109,7 @@ class CanvasPainter implements PropertyChangeListener {
 		g.fillRect(clip.x, clip.y, clip.width, clip.height);
 
 		grid.paintGrid(g);
-		g.setColor(new Color(150, 150, 150));
+		g.setColor(new Color(190, 190, 190));
 
 		Graphics gScaled = g.create();
 		if (zoomFactor != 1.0 && gScaled instanceof Graphics2D) {
@@ -157,7 +157,7 @@ class CanvasPainter implements PropertyChangeListener {
 				(int) Math.round(bds.getY() + h/2.0 - b/2.0),
 				(int) Math.round(a), (int) Math.round(b));
 			GraphicsUtil.switchToWidth(g, 1);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 		}
 
 		// draw circuit and selection

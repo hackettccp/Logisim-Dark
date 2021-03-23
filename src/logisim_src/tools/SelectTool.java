@@ -500,7 +500,7 @@ public class SelectTool extends Tool {
 		} else {
 			int[] xp = { x+ 5, x+ 5, x+ 9, x+12, x+14, x+11, x+16 };
 			int[] yp = { y   , y+17, y+12, y+18, y+18, y+12, y+12 };
-			g.setColor(java.awt.Color.black);
+			g.setColor(new Color(190, 190, 190));
 			g.fillPolygon(xp, yp, xp.length);
 		}
 	}

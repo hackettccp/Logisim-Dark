@@ -17,13 +17,13 @@ public class Value {
 
 	public static final int MAX_WIDTH = 32;
 
-	public static final Color NIL_COLOR = Color.GRAY;
+	public static final Color NIL_COLOR = new Color(0xffff33);
 	public static final Color FALSE_COLOR = new Color(0, 100, 0);
 	public static final Color TRUE_COLOR = new Color(0, 210, 0);
-	public static final Color UNKNOWN_COLOR = new Color(40, 150, 255);
-	public static final Color ERROR_COLOR = new Color(250, 0, 0);
-	public static final Color WIDTH_ERROR_COLOR = new Color(255, 123, 0);
-	public static final Color MULTI_COLOR = Color.GRAY;
+	public static final Color UNKNOWN_COLOR = new Color(0x377eb8);
+	public static final Color ERROR_COLOR = new Color(0xe41a1c);
+	public static final Color WIDTH_ERROR_COLOR = new Color(0xff7f00);
+	public static final Color MULTI_COLOR = new Color(190, 190, 190);
 	
 	private static final Cache cache = new Cache();
 

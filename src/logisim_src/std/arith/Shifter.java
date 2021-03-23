@@ -160,7 +160,7 @@ public class Shifter extends InstanceFactory {
 		int x = loc.getX() - 15;
 		int y = loc.getY();
 		Object shift = painter.getAttributeValue(ATTR_SHIFT);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		if (shift == SHIFT_LOGICAL_RIGHT) {
 			g.fillRect(x, y - 1, 8, 3);
 			drawArrow(g, x + 10, y, -4);

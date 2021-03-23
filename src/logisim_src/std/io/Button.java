@@ -37,7 +37,7 @@ public class Button extends InstanceFactory {
 			}, new Object[] {
 				Direction.EAST, Color.WHITE,
 				"", Io.LABEL_CENTER,
-				StdAttr.DEFAULT_LABEL_FONT, Color.BLACK
+				StdAttr.DEFAULT_LABEL_FONT, new Color(190, 190, 190)
 			});
 		setFacingAttribute(StdAttr.FACING);
 		setIconName("button.gif");
@@ -163,7 +163,7 @@ public class Button extends InstanceFactory {
 			
 			g.setColor(color);
 			g.fillRect(x, y, w - DEPTH, h - DEPTH);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			g.drawRect(x, y, w - DEPTH, h - DEPTH);
 		} else {
 			depress = 0;
@@ -173,7 +173,7 @@ public class Button extends InstanceFactory {
 			g.fillPolygon(xp, yp, xp.length);
 			g.setColor(color);
 			g.fillRect(x, y, w - DEPTH, h - DEPTH);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			g.drawRect(x, y, w - DEPTH, h - DEPTH);
 			g.drawLine(x + w - DEPTH, y + h - DEPTH, x + w, y + h);
 			g.drawPolygon(xp, yp, xp.length);

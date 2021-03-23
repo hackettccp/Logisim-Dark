@@ -139,7 +139,7 @@ public class WiringTool extends Tool {
 			int x1 = e1.getX();
 			int y1 = e1.getY();
 
-			g.setColor(new Color(230, 230, 230));
+			g.setColor(new Color(190, 190, 190));
 			GraphicsUtil.switchToWidth(g, 3);
 			if (direction == HORIZONTAL) {
 				if (x0 != x1) g.drawLine(x0, y0, x1, y0);
@@ -149,7 +149,7 @@ public class WiringTool extends Tool {
 				if (x0 != x1) g.drawLine(x0, y1, x1, y1);
 			}
 		} else if (AppPreferences.ADD_SHOW_GHOSTS.getBoolean() && inCanvas) {
-			g.setColor(Color.GRAY);
+			g.setColor(Color.DARK_GRAY);
 			g.fillOval(cur.getX() - 2, cur.getY() - 2, 5, 5);
 		}
 	}
@@ -391,7 +391,7 @@ public class WiringTool extends Tool {
 		if (toolIcon != null) {
 			toolIcon.paintIcon(c.getDestination(), g, x + 2, y + 2);
 		} else {
-			g.setColor(new Color(230, 230, 230));
+			g.setColor(new Color(190, 190, 190));
 			g.drawLine(x + 3, y + 13, x + 17, y + 7);
 			g.fillOval(x + 1, y + 11, 5, 5);
 			g.fillOval(x + 15, y + 5, 5, 5);

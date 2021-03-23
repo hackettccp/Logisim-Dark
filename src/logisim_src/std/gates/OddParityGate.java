@@ -32,7 +32,7 @@ class OddParityGate extends AbstractGate {
 	@Override
 	public void paintIconRectangular(InstancePainter painter) {
 		Graphics g = painter.getGraphics();
-		g.setColor(Color.black);
+		g.setColor(new Color(190, 190, 190));
 		g.drawRect(1, 2, 16, 16);
 		Font old = g.getFont();
 		g.setFont(old.deriveFont(9.0f));

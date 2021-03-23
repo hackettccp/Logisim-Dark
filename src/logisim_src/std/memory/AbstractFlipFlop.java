@@ -142,7 +142,7 @@ abstract class AbstractFlipFlop extends InstanceFactory {
 				g.setColor(Color.WHITE);
 				GraphicsUtil.drawCenteredText(g,
 					myState.curValue.toDisplayString(), x - 19, y + 9);
-				g.setColor(Color.BLACK);
+				g.setColor(new Color(190, 190, 190));
 			}
 		}
 		
@@ -151,7 +151,7 @@ abstract class AbstractFlipFlop extends InstanceFactory {
 		painter.drawPort(n + 3, "0", Direction.SOUTH);
 		painter.drawPort(n + 4, "1", Direction.SOUTH);
 		painter.drawPort(n + 5, Strings.get("memEnableLabel"), Direction.SOUTH);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		for (int i = 0; i < n; i++) {
 			painter.drawPort(i, getInputName(i), Direction.EAST);
 		}

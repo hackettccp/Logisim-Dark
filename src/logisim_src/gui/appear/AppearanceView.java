@@ -18,6 +18,8 @@ import logisim_src.gui.main.EditHandler;
 import logisim_src.prefs.AppPreferences;
 import logisim_src.proj.Project;
 
+import java.awt.*;
+
 public class AppearanceView {
 	private static final double[] ZOOM_OPTIONS = { 100, 150, 200, 300, 400, 600, 800 };
 
@@ -33,6 +35,7 @@ public class AppearanceView {
 		attrs = new DrawingAttributeSet();
 		SelectTool selectTool = new SelectTool();
 		canvas = new AppearanceCanvas(selectTool);
+		canvas.setBackground(Color.BLACK);
 		toolbarModel = new AppearanceToolbarModel(selectTool, canvas, attrs);
 		zoomModel = new BasicZoomModel(AppPreferences.APPEARANCE_SHOW_GRID,
 				AppPreferences.APPEARANCE_ZOOM, ZOOM_OPTIONS);
@@ -40,6 +43,7 @@ public class AppearanceView {
 		attrTableManager = null;
 		canvasPane = new CanvasPane(canvas);
 		canvasPane.setZoomModel(zoomModel);
+
 		editHandler = new AppearanceEditHandler(canvas);
 	}
 	

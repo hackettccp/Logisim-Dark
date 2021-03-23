@@ -83,7 +83,7 @@ public class Subtractor extends InstanceFactory {
 		int x = loc.getX();
 		int y = loc.getY();
 		GraphicsUtil.switchToWidth(g, 2);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		g.drawLine(x - 15, y, x - 5, y);
 		GraphicsUtil.switchToWidth(g, 1);
 	}

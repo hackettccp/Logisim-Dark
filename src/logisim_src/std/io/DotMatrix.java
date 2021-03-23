@@ -200,7 +200,7 @@ public class DotMatrix extends InstanceFactory {
 				}
 			}
 		}
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		GraphicsUtil.switchToWidth(g, 2);
 		g.drawRect(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight());
 		GraphicsUtil.switchToWidth(g, 1);

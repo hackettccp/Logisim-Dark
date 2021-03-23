@@ -72,9 +72,9 @@ class AboutCredits extends JComponent {
 		fadeStop = (float) (About.IMAGE_HEIGHT / 4.0);
 
 		colorBase = new Color[] {
-				new Color(210, 0, 0),
-				new Color(48, 150, 150),
-				new Color(200, 200, 96),
+				new Color(0xe41a1c),
+				new Color(0x377eb8),
+				new Color(0xffff33),
 		};
 		font = new Font[] {
 				new Font("Sans Serif", Font.ITALIC, 18),
@@ -101,13 +101,14 @@ class AboutCredits extends JComponent {
 		
 		lines = new ArrayList<CreditsLine>();
 		linesHeight = 0; // computed in paintComponent
-		lines.add(new CreditsLine(0, Strings.get("creditsRoleLead")));
+
+		/* If you fork Logisim-Dark, feel free to change the above lines, but
+		 * please do not change these last eight lines! */
+		lines.add(new CreditsLine(0, Strings.get("Dark Version")));
 		lines.add(new CreditsLine(1, "Michael Hackett"));
 		lines.add(new CreditsLine(2, "Community College of Philadelphia"));
 		lines.add(new CreditsLine(1, "www.github.com/hackettccp/logisim-dark"));
 		initialLines = lines.size();
-		/* If you fork Logisim, feel free to change the above lines, but
-		 * please do not change these last four lines! */
 		lines.add(new CreditsLine(0, Strings.get("creditsRoleOriginal"),
 				hendrixLogo, HENDRIX_WIDTH));
 		lines.add(new CreditsLine(1, "Carl Burch"));

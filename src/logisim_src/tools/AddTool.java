@@ -223,7 +223,7 @@ public class AddTool extends Tool {
 		if (state == SHOW_GHOST) {
 			source.drawGhost(context, Color.GRAY, x, y, getBaseAttributes());
 		} else if (state == SHOW_ADD) {
-			source.drawGhost(context, Color.BLACK, x, y, getBaseAttributes());
+			source.drawGhost(context, new Color(190, 190, 190), x, y, getBaseAttributes());
 		}
 	}
 	

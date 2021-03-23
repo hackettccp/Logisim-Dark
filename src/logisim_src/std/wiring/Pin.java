@@ -100,7 +100,7 @@ public class Pin extends InstanceFactory {
 			g.setColor(ICON_WIDTH_COLOR);
 			g.setFont(ICON_WIDTH_FONT);
 			GraphicsUtil.drawCenteredText(g, "" + w.getWidth(), 10, 9);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 		}
 	}
 
@@ -129,7 +129,7 @@ public class Pin extends InstanceFactory {
 		} else if (dir == Direction.SOUTH) { pinx = 9; piny = 16;
 		}
 
-		g.setColor(Color.black);
+		g.setColor(new Color(190, 190, 190));
 		if (output) {
 			g.drawOval(4, 4, 13, 13);
 		} else {
@@ -173,7 +173,7 @@ public class Pin extends InstanceFactory {
 		int x = bds.getX();
 		int y = bds.getY();
 		GraphicsUtil.switchToWidth(g, 2);
-		g.setColor(Color.black);
+		g.setColor(new Color(190, 190, 190));
 		if (attrs.type == EndData.OUTPUT_ONLY) {
 			if (attrs.width.getWidth() == 1) {
 				g.drawOval(x + 1, y + 1,
@@ -190,7 +190,7 @@ public class Pin extends InstanceFactory {
 		painter.drawLabel();
 	
 		if (!painter.getShowState()) {
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			GraphicsUtil.drawCenteredText(g, "x" + attrs.width.getWidth(),
 					bds.getX() + bds.getWidth() / 2, bds.getY() + bds.getHeight() / 2);
 		} else {

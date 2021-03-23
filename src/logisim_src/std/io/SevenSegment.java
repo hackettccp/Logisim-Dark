@@ -17,7 +17,7 @@ import logisim_src.instance.Port;
 
 public class SevenSegment extends InstanceFactory {
 	static Bounds[] SEGMENTS = null;
-	static Color DEFAULT_OFF = new Color(220, 220, 220);
+	static Color DEFAULT_OFF = Color.DARK_GRAY;
 	
 	public SevenSegment() {
 		super("7-Segment Display", Strings.getter("sevenSegmentComponent"));
@@ -78,7 +78,7 @@ public class SevenSegment extends InstanceFactory {
 		if (painter.shouldDrawColor() && bgColor.getAlpha() != 0) {
 			g.setColor(bgColor);
 			g.fillRect(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight());
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 		}
 		painter.drawBounds();
 		g.setColor(Color.DARK_GRAY);

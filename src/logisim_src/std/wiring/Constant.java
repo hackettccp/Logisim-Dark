@@ -37,7 +37,7 @@ public class Constant extends InstanceFactory {
 
 	public static InstanceFactory FACTORY = new Constant();
 
-	private static final Color BACKGROUND_COLOR = new Color(230, 230, 230);
+	private static final Color BACKGROUND_COLOR = Color.BLACK;
 	
 	private static final List<Attribute<?>> ATTRIBUTES
 		= Arrays.asList(new Attribute<?>[] {
@@ -272,7 +272,7 @@ public class Constant extends InstanceFactory {
 				x + bds.getX() + bds.getWidth() / 2,
 				y + bds.getY() + bds.getHeight() / 2 - 2);
 		} else {
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			GraphicsUtil.drawCenteredText(g, v.toHexString(),
 				x + bds.getX() + bds.getWidth() / 2,
 				y + bds.getY() + bds.getHeight() / 2 - 2);

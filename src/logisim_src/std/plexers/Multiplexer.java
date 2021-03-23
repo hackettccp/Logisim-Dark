@@ -264,7 +264,7 @@ public class Multiplexer extends InstanceFactory {
 		GraphicsUtil.drawText(g, "0", x0, y0, halign, GraphicsUtil.V_BASELINE);
 		
 		// draw the trapezoid, "MUX" string, the individual ports
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		Plexers.drawTrapezoid(g, bds, facing, select.getWidth() == 1 ? 10 : 20);
 		GraphicsUtil.drawCenteredText(g, "MUX",
 				bds.getX() + bds.getWidth() / 2,

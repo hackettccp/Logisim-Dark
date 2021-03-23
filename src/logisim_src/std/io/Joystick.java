@@ -92,7 +92,7 @@ public class Joystick extends InstanceFactory {
 		}
 		GraphicsUtil.switchToWidth(g, 1);
 		g.fillOval(x - 4, y - 4, 8, 8);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		g.drawOval(x - 4, y - 4, 8, 8);
 	}
 
@@ -155,10 +155,10 @@ public class Joystick extends InstanceFactory {
 			int x = loc.getX();
 			int y = loc.getY();
 			Graphics g = painter.getGraphics();
-			g.setColor(Color.WHITE);
+			g.setColor(new Color(190, 190, 190));
 			g.fillRect(x - 20, y, 10, 10);
 			GraphicsUtil.switchToWidth(g, 3);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			int dx = state.xPos;
 			int dy = state.yPos;
 			int x0 = x - 15 + (dx > 5 ? 1 : dx < -5 ? -1 : 0);

@@ -146,7 +146,7 @@ public class EditTool extends Tool {
 			g.setColor(Value.TRUE_COLOR);
 			GraphicsUtil.switchToWidth(g, 2);
 			g.drawOval(x - 5, y - 5, 10, 10);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			GraphicsUtil.switchToWidth(g, 1);
 		}
 		current.draw(canvas, context);

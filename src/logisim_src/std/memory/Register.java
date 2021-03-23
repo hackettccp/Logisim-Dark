@@ -129,7 +129,7 @@ public class Register extends InstanceFactory {
 		g.setColor(Color.GRAY);
 		painter.drawPort(CLR, "0", Direction.SOUTH);
 		painter.drawPort(EN, Strings.get("memEnableLabel"), Direction.EAST);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		painter.drawClock(CK, Direction.NORTH);
 
 		// draw contents

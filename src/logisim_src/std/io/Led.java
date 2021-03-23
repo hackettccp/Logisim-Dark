@@ -33,7 +33,7 @@ public class Led extends InstanceFactory {
 				Direction.WEST, new Color(240, 0, 0), Color.DARK_GRAY,
 				Boolean.TRUE,
 				"", Io.LABEL_CENTER,
-				StdAttr.DEFAULT_LABEL_FONT, Color.BLACK
+				StdAttr.DEFAULT_LABEL_FONT, new Color(190, 190, 190)
 			});
 		setFacingAttribute(StdAttr.FACING);
 		setIconName("led.gif");
@@ -134,7 +134,7 @@ public class Led extends InstanceFactory {
 			g.setColor(val == desired ? onColor : offColor);
 			g.fillOval(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight());
 		}
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		GraphicsUtil.switchToWidth(g, 2);
 		g.drawOval(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight());
 		GraphicsUtil.switchToWidth(g, 1);

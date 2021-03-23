@@ -31,7 +31,7 @@ public class Tty extends InstanceFactory {
 	private static final int BORDER = 5;
 	private static final int ROW_HEIGHT = 15;
 	private static final int COL_WIDTH = 7; 
-	private static final Color DEFAULT_BACKGROUND = new Color(0, 0, 0, 64);
+	private static final Color DEFAULT_BACKGROUND = new Color(190, 190, 190,40);
 	
 	private static final Font DEFAULT_FONT = new Font("monospaced", Font.PLAIN, 12);
 
@@ -49,7 +49,7 @@ public class Tty extends InstanceFactory {
 				Io.ATTR_COLOR, Io.ATTR_BACKGROUND
 			}, new Object[] {
 				Integer.valueOf(8), Integer.valueOf(32), StdAttr.TRIG_RISING,
-				Color.BLACK, DEFAULT_BACKGROUND
+				new Color(190, 190, 190), DEFAULT_BACKGROUND
 			});
 		setIconName("tty.gif");
 		
@@ -134,7 +134,7 @@ public class Tty extends InstanceFactory {
 					10, 10);
 		}
 		GraphicsUtil.switchToWidth(g, 2);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		g.drawRoundRect(bds.getX(), bds.getY(), bds.getWidth(), bds.getHeight(),
 				2 * BORDER, 2 * BORDER);
 		GraphicsUtil.switchToWidth(g, 1);

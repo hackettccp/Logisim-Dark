@@ -146,7 +146,7 @@ public class Clock extends InstanceFactory {
 		int x = bds.getX();
 		int y = bds.getY();
 		GraphicsUtil.switchToWidth(g, 2);
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		g.drawRect(x, y, bds.getWidth(), bds.getHeight());
 
 		painter.drawLabel();
@@ -157,7 +157,7 @@ public class Clock extends InstanceFactory {
 			g.setColor(state.sending.getColor());
 			drawUp = state.sending == Value.TRUE;
 		} else {
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			drawUp = true;
 		}
 		x += 10;

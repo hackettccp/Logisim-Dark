@@ -63,7 +63,7 @@ public class PokeTool extends Tool {
 			g.setColor(caretColor);
 			g.fillRect(x + 2, y + 2, fm.stringWidth(vStr) + 4, 
 					fm.getAscent() + fm.getDescent() + 4);
-			g.setColor(Color.BLACK);
+			g.setColor(new Color(190, 190, 190));
 			g.drawRect(x + 2, y + 2, fm.stringWidth(vStr) + 4, 
 					fm.getAscent() + fm.getDescent() + 4);
 			g.fillOval(x - 2, y - 2, 5, 5);
@@ -242,7 +242,7 @@ public class PokeTool extends Tool {
 		if (toolIcon != null) {
 			toolIcon.paintIcon(c.getDestination(), g, x + 2, y + 2);
 		} else {
-			g.setColor(java.awt.Color.black);
+			g.setColor(new Color(190, 190, 190));
 			g.drawLine(x + 4, y +  2, x + 4, y + 17);
 			g.drawLine(x + 4, y + 17, x + 1, y + 11);
 			g.drawLine(x + 4, y + 17, x + 7, y + 11);

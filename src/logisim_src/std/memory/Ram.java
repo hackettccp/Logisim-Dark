@@ -217,7 +217,7 @@ public class Ram extends Mem {
 
 		if (separate) {
 			painter.drawPort(WE, Strings.get("ramWELabel"), Direction.SOUTH);
-			painter.getGraphics().setColor(Color.BLACK);
+			painter.getGraphics().setColor(new Color(190, 190, 190));
 			painter.drawPort(DIN, Strings.get("ramDataLabel"), Direction.EAST);
 		}
 	}

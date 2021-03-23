@@ -147,7 +147,7 @@ class NotGate extends InstanceFactory {
 	@Override
 	public void paintIcon(InstancePainter painter) {
 		Graphics g = painter.getGraphics();
-		g.setColor(Color.black);
+		g.setColor(new Color(190, 190, 190));
 		if (painter.getGateShape() == AppPreferences.SHAPE_RECTANGULAR) {
 			if (toolIconRect != null) {
 				toolIconRect.paintIcon(painter.getDestination(), g, 2, 2);
@@ -187,7 +187,7 @@ class NotGate extends InstanceFactory {
 	
 	@Override
 	public void paintInstance(InstancePainter painter) {
-		painter.getGraphics().setColor(Color.BLACK);
+		painter.getGraphics().setColor(new Color(190, 190, 190));
 		paintBase(painter);
 		painter.drawPorts();
 		painter.drawLabel();

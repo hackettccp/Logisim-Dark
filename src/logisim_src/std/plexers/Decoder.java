@@ -276,7 +276,7 @@ public class Decoder extends InstanceFactory {
 				halign, GraphicsUtil.V_BASELINE);
 		
 		// draw trapezoid, "Decd", and ports
-		g.setColor(Color.BLACK);
+		g.setColor(new Color(190, 190, 190));
 		Plexers.drawTrapezoid(g, bds, facing.reverse(), outputs == 2 ? 10 : 20);
 		GraphicsUtil.drawCenteredText(g, "Decd",
 				bds.getX() + bds.getWidth() / 2,
