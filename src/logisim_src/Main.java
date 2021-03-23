@@ -24,12 +24,10 @@ package logisim_src;
 import com.formdev.flatlaf.FlatLightLaf;
 import logisim_src.gui.start.Startup;
 
-import javax.swing.*;
-
 public class Main {
-	public static final LogisimVersion VERSION = LogisimVersion.get(2, 7, 1);
+	public static final LogisimVersion VERSION = LogisimVersion.get(0, 9, 9);
 	public static final String VERSION_NAME = VERSION.toString();
-	public static final int COPYRIGHT_YEAR = 2011;
+	public static final int COPYRIGHT_YEAR = 2021;
 
 	public static void main(String[] args) {
 		FlatLightLaf.install();

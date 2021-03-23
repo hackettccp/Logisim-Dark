@@ -54,12 +54,12 @@ public class About {
 	}
 	
 	private static class MyPanel extends JPanel implements AncestorListener {
-		private final Color fadeColor = new Color(255, 255, 255, 128);
-		private final Color headerColor = new Color(143, 0, 0);
-		private final Color gateColor = Color.DARK_GRAY;
-		private final Font headerFont = new Font("Monospaced", Font.BOLD, 72);
-		private final Font versionFont = new Font("Serif", Font.PLAIN | Font.ITALIC, 32);
-		private final Font copyrightFont = new Font("Serif", Font.ITALIC, 18);
+		private final Color fadeColor = new Color(0, 0, 0, 0);
+		private final Color headerColor = new Color(150, 200, 255);
+		private final Color gateColor = new Color(210, 210, 210);
+		private final Font headerFont = new Font("Monospaced", Font.BOLD, 32);
+		private final Font versionFont = new Font("Monospaced", Font.PLAIN | Font.ITALIC, 24);
+		private final Font copyrightFont = new Font("Monospaced", Font.ITALIC, 18);
 		
 		private Value upper = Value.FALSE;
 		private Value lower = Value.TRUE;
@@ -72,7 +72,7 @@ public class About {
 			int prefWidth = IMAGE_WIDTH + 2 * IMAGE_BORDER;
 			int prefHeight = IMAGE_HEIGHT + 2 * IMAGE_BORDER;
 			setPreferredSize(new Dimension(prefWidth, prefHeight));
-			setBackground(Color.WHITE);
+			setBackground(Color.BLACK);
 			addAncestorListener(this);
 			
 			credits = new AboutCredits();
@@ -87,10 +87,12 @@ public class About {
 			try {
 				int x = IMAGE_BORDER;
 				int y = IMAGE_BORDER;
+
 				drawCircuit(g, x + 10, y + 55);
 				g.setColor(fadeColor);
 				g.fillRect(x, y, IMAGE_WIDTH, IMAGE_HEIGHT);
 				drawText(g, x, y);
+
 			} catch (Throwable t) { }
 		}
 		
@@ -210,7 +212,7 @@ public class About {
 			
 			g.setColor(headerColor);
 			g.setFont(headerFont);
-			g.drawString("Logisim", x, y + 45);
+			g.drawString("Logisim-Dark", x, y + 45);
 			g.setFont(copyrightFont); fm = g.getFontMetrics();
 			str = "\u00a9 " + Main.COPYRIGHT_YEAR;
 			g.drawString(str, x + IMAGE_WIDTH - fm.stringWidth(str), y + 16);
@@ -248,6 +250,6 @@ public class About {
 		panel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
 
 		JOptionPane.showMessageDialog(owner, panel,
-				"Logisim " + Main.VERSION_NAME, JOptionPane.PLAIN_MESSAGE);
+				"Logisim-Dark " + Main.VERSION_NAME, JOptionPane.PLAIN_MESSAGE);
 	}
 }

@@ -72,14 +72,14 @@ class AboutCredits extends JComponent {
 		fadeStop = (float) (About.IMAGE_HEIGHT / 4.0);
 
 		colorBase = new Color[] {
-				new Color(143, 0, 0),
-				new Color(48, 0, 96),
-				new Color(48, 0, 96),
+				new Color(210, 0, 0),
+				new Color(48, 150, 150),
+				new Color(200, 200, 96),
 		};
 		font = new Font[] {
-				new Font("Sans Serif", Font.ITALIC, 20),
-				new Font("Sans Serif", Font.BOLD, 24),
-				new Font("Sans Serif", Font.BOLD, 18),
+				new Font("Sans Serif", Font.ITALIC, 18),
+				new Font("Sans Serif", Font.BOLD, 16),
+				new Font("Sans Serif", Font.BOLD, 12),
 		};
 		paintSteady = new Paint[colorBase.length];
 		for (int i = 0; i < colorBase.length; i++) {
@@ -101,30 +101,11 @@ class AboutCredits extends JComponent {
 		
 		lines = new ArrayList<CreditsLine>();
 		linesHeight = 0; // computed in paintComponent
-		lines.add(new CreditsLine(1, "www.cburch.com/logisim/"));
-		lines.add(new CreditsLine(0, Strings.get("creditsRoleLead"),
-				hendrixLogo, HENDRIX_WIDTH));
-		lines.add(new CreditsLine(1, "Carl Burch"));
-		lines.add(new CreditsLine(2, "Hendrix College"));
+		lines.add(new CreditsLine(0, Strings.get("creditsRoleLead")));
+		lines.add(new CreditsLine(1, "Michael Hackett"));
+		lines.add(new CreditsLine(2, "Community College of Philadelphia"));
+		lines.add(new CreditsLine(1, "www.github.com/hackettccp/logisim-dark"));
 		initialLines = lines.size();
-		lines.add(new CreditsLine(0, Strings.get("creditsRoleGerman")));
-		lines.add(new CreditsLine(1, "Uwe Zimmerman"));
-		lines.add(new CreditsLine(2, "Uppsala universitet"));
-		lines.add(new CreditsLine(0, Strings.get("creditsRoleGreek")));
-		lines.add(new CreditsLine(1, "Thanos Kakarountas"));
-		lines.add(new CreditsLine(2, "\u03A4.\u0395.\u0399 \u0399\u03BF\u03BD\u03AF\u03C9\u03BD \u039D\u03AE\u03C3\u03C9\u03BD"));
-		lines.add(new CreditsLine(0, Strings.get("creditsRolePortuguese")));
-		lines.add(new CreditsLine(1, "Theldo Cruz Franqueira"));
-		lines.add(new CreditsLine(2, "PUC Minas"));
-		lines.add(new CreditsLine(0, Strings.get("creditsRoleRussian")));
-		lines.add(new CreditsLine(1, "Ilia Lilov"));
-		lines.add(new CreditsLine(2, "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u0438\u0439 \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439"));
-		lines.add(new CreditsLine(2, "\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u043F\u0435\u0447\u0430\u0442\u0438"));
-		lines.add(new CreditsLine(0, Strings.get("creditsRoleTesting")));
-		lines.add(new CreditsLine(1, "Ilia Lilov"));
-		lines.add(new CreditsLine(2, "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u0438\u0439 \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439"));
-		lines.add(new CreditsLine(2, "\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u043F\u0435\u0447\u0430\u0442\u0438"));
-		
 		/* If you fork Logisim, feel free to change the above lines, but
 		 * please do not change these last four lines! */
 		lines.add(new CreditsLine(0, Strings.get("creditsRoleOriginal"),
