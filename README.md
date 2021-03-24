@@ -1,5 +1,5 @@
 # Logisim-Dark
-A fork of Logisim with a Darcula-inspired look and feel.
+A fork of Logisim with a Darcula-inspired dark mode.
 
 Logisim-Dark is a circuit simulation tool for education.  
 This fork of the original [Logisim](http://www.cburch.com/logisim/) codebase (originally created by Carl Burch) adds a dark theme (using [FlatLaf](https://github.com/JFormDesigner/FlatLaf)) for easier night-time (or any time) viewing.
