@@ -379,6 +379,9 @@ public class AttrTable extends JPanel implements LocaleListener {
 		int titleSize = Math.round(baseFont.getSize() * 1.2f);
 		Font titleFont = baseFont.deriveFont((float) titleSize).deriveFont(Font.BOLD);
 		title.setFont(titleFont);
+		table.setGridColor(Color.black);
+		table.setShowGrid(true);
+
 		Color bgColor = new Color(240, 240, 240);
 		//setBackground(bgColor);
 		//table.setBackground(bgColor);
@@ -388,7 +391,6 @@ public class AttrTable extends JPanel implements LocaleListener {
 		}
 		
 		JScrollPane tableScroll = new JScrollPane(table);
-		
 		this.add(title, BorderLayout.PAGE_START);
 		this.add(tableScroll, BorderLayout.CENTER);
 		LocaleManager.addLocaleListener(this);
