@@ -18,7 +18,7 @@ public class GridPainter {
 	public static final String ZOOM_PROPERTY = "zoom";
 	public static final String SHOW_GRID_PROPERTY = "showgrid";
 	
-	private static final int GRID_DOT_COLOR = 0x55555555;
+	private static final int GRID_DOT_COLOR = 0x55FFFFFF;
 	private static final int GRID_DOT_ZOOMED_COLOR = 0xFFCCCCCC;
 
 	private static final Color GRID_ZOOMED_OUT_COLOR = new Color(210, 210, 210);
