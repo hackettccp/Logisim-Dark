@@ -378,7 +378,7 @@ public class Attributes {
 
 		@Override
 		public java.awt.Component getCellEditor(Font value) {
-			return new JFontChooser(value);
+			return new FontChooser(value);
 		}
 	}
 	
