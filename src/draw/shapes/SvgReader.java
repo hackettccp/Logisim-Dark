@@ -69,7 +69,7 @@ public class SvgReader {
 		}
 		if (attrs.contains(DrawAttr.FILL_COLOR)) {
 			String color = elt.getAttribute("fill");
-			if (color.equals("")) color = "#000000";
+			if (color.equals("")) color = "#BEBEBE";
 			String opacity = elt.getAttribute("fill-opacity");
 			if (!color.equals("none")) {
 				ret.setValue(DrawAttr.FILL_COLOR, getColor(color, opacity));

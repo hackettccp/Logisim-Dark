@@ -192,9 +192,11 @@ public abstract class AbstractCanvasObject
 		Integer width = getValue(DrawAttr.STROKE_WIDTH);
 		if (width != null && width.intValue() > 0) {
 			Color color = getValue(DrawAttr.STROKE_COLOR);
-			if (color != null && color.getAlpha() == 0) {
+			if (color != null && color.getAlpha() == 0 && color.getRGB() != 0) {
 				return false;
-			} else {
+			}
+			else {
+				color = new Color(190, 190, 190);
 				GraphicsUtil.switchToWidth(g, width.intValue());
 				if (color != null) g.setColor(color);
 				return true;
