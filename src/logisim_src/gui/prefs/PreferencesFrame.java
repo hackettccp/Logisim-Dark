@@ -89,6 +89,7 @@ public class PreferencesFrame extends LFrame {
 				new TemplateOptions(this),
 				new IntlOptions(this),
 				new WindowOptions(this),
+				new DisplayScaleOptions(this),
 				new LayoutOptions(this),
 				new ExperimentalOptions(this),
 		};
