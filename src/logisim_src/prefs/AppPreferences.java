@@ -77,7 +77,15 @@ public class AppPreferences {
 					Direction.EAST.toString(), Direction.WEST.toString(),
 					TOOLBAR_DOWN_MIDDLE, TOOLBAR_HIDDEN },
 				Direction.NORTH.toString()));
-	
+
+	// Display Scale preferences
+	public static final String SCALE_100 = "1.0";
+	public static final String SCALE_125 = "1.25";
+	public static final String SCALE_150 = "1.5";
+	public static final PrefMonitor<String> DISPLAY_SCALE
+		= create(new PrefMonitorStringOpts("displayScale",
+			new String[] { SCALE_100, SCALE_125, SCALE_150}, SCALE_100));
+
 	// Layout preferences
 	public static final String ADD_AFTER_UNCHANGED = "unchanged";
 	public static final String ADD_AFTER_EDIT = "edit";

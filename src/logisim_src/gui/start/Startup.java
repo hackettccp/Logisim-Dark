@@ -256,6 +256,8 @@ public class Startup {
 			AppPreferences.clear();
 		}
 
+		System.setProperty("flatlaf.uiScale", AppPreferences.DISPLAY_SCALE.get().toString());
+
 		try {
 			UIManager.setLookAndFeel(new FlatDarculaLaf());
 		} catch (Exception ex) { }
